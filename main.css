@@ -13,7 +13,7 @@ body {
 }
 
 a {
-    color: #439622;
+    color: #81288f;
 }
 
 header {
@@ -135,34 +135,38 @@ h1 i:last-of-type {
 }
 
 #photo {
-    width: 50%;
-    aspect-ratio: 3/2;
+    width: 45%;
     background-size: cover;
     background-position: center;
     float: left;
-    margin-right: 2rem;
-
+    border: 5px solid #439622;
+        border-radius: 10px;
+        aspect-ratio: 3/2;
 }
 
 #fact {
     float: left;
     position: relative;
+    width: 50%;
+}
+    
+#fact ul {
+    margin-left: 5rem;
+    margin-top: 0.5rem;
 }
 
-#fact i {
-    position: absolute;
-    font-size: 20rem;
-    transform: rotate(45deg);
-    z-index: 0;
-    color: #439622;
-    opacity: 40%;
-    top: 1rem;
-    left: 2rem;
-}
-
-#fact span {
+#fact li {
+    margin-bottom: 1rem;
     position: relative;
-    z-index: 1;
+}
+
+#fact li::before {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: '\f1b0';
+    position: absolute;
+    left: -25px;
+    color: #439622;
 }
 
 footer {
@@ -189,5 +193,12 @@ footer p:first-child {
 }
 
 #dark a {
+    color: #F97068;
+    }
+    
+    #dark #fact li::before {
     color: #77d751;
+}
+#dark #photo {
+    border-color: #439622;
 }
