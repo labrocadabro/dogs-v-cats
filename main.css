@@ -1,0 +1,193 @@
+:root:has(#switch:checked) {
+    color-scheme: dark;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #FEF8EC;
+    color: #161314;
+    font: 2rem 'Josefin Sans', sans-serif;
+}
+
+a {
+    color: #439622;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0 3rem 0;
+}
+
+header #switch {
+    position: relative;
+    display: inline-block;
+    width: 90px;
+    height: 50px;
+}
+
+/* Hide default HTML checkbox */
+#switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+#slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #81288f;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#slider .fa-solid {
+    position: absolute;
+    z-index: 2;
+    font-size: 2.5rem;
+}
+
+#slider .fa-dog {
+    left: 10px;
+    color: #161314;
+}
+
+#slider .fa-cat {
+    right: 10px;
+    color: #FEF8EC;
+}
+
+#slider:before {
+    position: absolute;
+    text-align: center;
+    content: "";
+    height: 40px;
+    width: 40px;
+    left: 5px;
+    bottom: 5px;
+    background-color: #FEF8EC;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+input:checked+#slider {
+    background-color: #F97068;
+}
+
+input:focus+#slider {
+    box-shadow: 0 0 1px #F97068;
+}
+
+input:checked+#slider:before {
+    -webkit-transform: translateX(41px);
+    -ms-transform: translateX(41px);
+    transform: translateX(41px);
+    content: "";
+    background-color: #161314;
+}
+
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #81288f;
+    font: 5rem 'Bungee Shade', sans-serif;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+h1 i {
+    font-size: 4rem;
+}
+
+h1 i:first-of-type {
+    margin-right: 0.5rem;
+}
+
+h1 i:nth-of-type(2) {
+    margin-right: 2rem;
+}
+
+h1 i:nth-of-type(3) {
+    margin-left: 2rem;
+}
+
+h1 i:last-of-type {
+    margin-left: 0.5rem;
+}
+
+#photo {
+    width: 50%;
+    aspect-ratio: 3/2;
+    background-size: cover;
+    background-position: center;
+    float: left;
+    margin-right: 2rem;
+
+}
+
+#fact {
+    float: left;
+    position: relative;
+}
+
+#fact i {
+    position: absolute;
+    font-size: 20rem;
+    transform: rotate(45deg);
+    z-index: 0;
+    color: #439622;
+    opacity: 40%;
+    top: 1rem;
+    left: 2rem;
+}
+
+#fact span {
+    position: relative;
+    z-index: 1;
+}
+
+footer {
+    display: flex;
+    max-width: 1000px;
+    margin: 1rem auto;
+    justify-content: center;
+}
+
+footer p:first-child {
+    margin-right: 2rem;
+}
+
+/*   DARK MODE   */
+
+#dark {
+    background-color: #161314;
+    color: #FEF8EC;
+}
+
+#dark h1 {
+    font: 5rem 'Berkshire Swash', cursive;
+    color: #F97068;
+}
+
+#dark a {
+    color: #77d751;
+}
