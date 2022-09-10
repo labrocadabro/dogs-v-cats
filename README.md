@@ -13,7 +13,7 @@ As I had decided to make a dog/cat switcher, it occured to me that this would be
 ## Optimizations
 
 - set up a proper API for the facts (or at least move the data out of main.js)
-- make it more responsive
+- ~~make it more responsive~~ done
 
 ## Lessons Learned:
 

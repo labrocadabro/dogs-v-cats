@@ -134,20 +134,20 @@ h1 i:last-of-type {
     margin-left: 0.5rem;
 }
 
+#content {
+	padding: 0 2rem;
+}
+
 #photo {
-    width: 45%;
-    background-size: cover;
-    background-position: center;
-    float: left;
-    border: 5px solid #439622;
-        border-radius: 10px;
-        aspect-ratio: 3/2;
+	background-size: cover;
+	background-position: center;
+	border: 5px solid #439622;
+	border-radius: 10px;
+	aspect-ratio: 3/2;
 }
 
 #fact {
-    float: left;
-    position: relative;
-    width: 50%;
+	margin: 2rem 0;
 }
     
 #fact ul {
@@ -165,7 +165,8 @@ h1 i:last-of-type {
     font-weight: 900;
     content: '\f1b0';
     position: absolute;
-    left: -25px;
+    left: -30px;
+		top: -3px;
     color: #439622;
 }
 
@@ -201,4 +202,17 @@ footer p:first-child {
 }
 #dark #photo {
     border-color: #439622;
+}
+
+@media (min-width: 750px) {
+	#content {
+		display: flex;
+		margin-bottom: 2rem;
+	}
+	#photo, #fact {
+		flex: 1;
+	}
+	#fact {
+		margin: 0;
+	}
 }
