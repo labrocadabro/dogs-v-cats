@@ -1,5 +1,8 @@
 export default function Credits() {
   return (
-		<h1>Credits</h1>
+		<>
+			<p><a href="" id="facts-link" target="_blank"><span class="pet"></span> facts</a></p>
+      <p><a href="" id="photos-link" target="_blank"><span class="pet"></span> photos</a></p>
+		</>
   )
 }

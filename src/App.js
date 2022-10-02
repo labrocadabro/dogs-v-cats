@@ -7,12 +7,18 @@ import Credits from "./components/Credits";
 
 export default function App() {
   return (
-		<>
-			<Switcher />
-			<Title />
-			<Image />
-			<Facts />
-			<Credits />
-		</>
+		<div>
+			<header>
+				<Switcher />
+			</header>
+			<main>
+				<Title />
+				<Image />
+				<Facts />
+			</main>
+			<footer>
+				<Credits />
+			</footer>
+		</div>
   )
 }

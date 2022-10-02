@@ -1,5 +1,5 @@
 export default function Image() {
   return (
-		<h1>Image</h1>
+		<p id="photo"></p>
   )
 }
