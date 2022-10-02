@@ -1,28 +1,70 @@
-# Dogs v. Cats
+# Getting Started with Create React App
 
-This is a quick litle project I made to get some experience working the the Fetch API.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## How It's Made:
+## Available Scripts
 
-**Built with:** <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/>
+In the project directory, you can run:
 
-The project was supposed to use four APIs, two (facts and photos) for each animal. However, I had some technical difficulties with the facts APIs, so I ended up storing the data locally instead. The APIs are only used for the photos.
+### `npm start`
 
-As I had decided to make a dog/cat switcher, it occured to me that this would be a good opportunity to make a light/dark theme switcher, a project I had never attempted before. It turned out to be simple: just use a bit of Javascript to add a "dark" id to the body, and then provide the relevant dark mode CSS.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-## Optimizations
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-- set up a proper API for the facts (or at least move the data out of main.js)
-- ~~make it more responsive~~ done
+### `npm test`
 
-## Lessons Learned:
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-- Dark mode is easy! 
-- Some public APIs have CORS problems or other technical issues, be prepared to find alternatives
-- The phrase "it's raining cats and dogs" has a horrific origin
+### `npm run build`
 
-## License
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-[MIT](https://opensource.org/licenses/MIT)
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-Copyright (c) 2022-present, Laura Abro
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
