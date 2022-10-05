@@ -1,7 +1,3 @@
-:root:has(#switch:checked) {
-    color-scheme: dark;
-}
-
 html {
     font-size: 62.5%;
 }

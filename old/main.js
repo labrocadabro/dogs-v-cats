@@ -96,7 +96,7 @@ const catFacts = [
     "In 1888, more than 300,000 mummified cats were found an Egyptian cemetery. They were stripped of their wrappings and carted off to be used by farmers in England and the U.S. for fertilizer.",
     "Most cats give birth to a litter of between one and nine kittens. The largest known litter ever produced was 19 kittens, of which 15 survived.",
     "Smuggling a cat out of ancient Egypt was punishable by death. Phoenician traders eventually succeeded in smuggling felines, which they sold to rich people in Athens and other important cities.",
-    "The earliest ancestor of the modern cat lived about 30 million years ago. Scientists called it the Proailurus, which means \"first cat\" in Greek. The group of animals that pet cats belong to emerged around 12 million years ago.",
+    "The earliest ancestor of the modern cat lived about 30 million years ago. Scientists called it the Proailurus, which means \"first cat\" in Greek. The group of animals that pet cats belong to emerged around 12 million years ago.",
     "The biggest wildcat today is the Siberian Tiger. It can be more than 12 feet (3.6 m) long (about the size of a small car) and weigh up to 700 pounds (317 kg).",
     "Cats have 300 million neurons; dogs have about 160 million",
     "A cat's brain is biologically more similar to a human brain than it is to a dog's. Both humans and cats have identical regions in their brains that are responsible for emotions.",
