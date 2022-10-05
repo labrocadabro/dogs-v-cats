@@ -4,20 +4,25 @@ import Image from "./components/Image";
 import Facts from "./components/Facts";
 import Credits from "./components/Credits";
 
+import { useState } from "react";
 
 export default function App() {
+	const [catMode, setCatMode] = useState(false);
+	function toggleCatMode() {
+		setCatMode(oldCatMode => !oldCatMode);
+	}
   return (
 		<div>
 			<header>
-				<Switcher />
+				<Switcher catMode={catMode} onClick={toggleCatMode} />
 			</header>
 			<main>
-				<Title />
-				<Image />
-				<Facts />
+				<Title catMode={catMode} />
+				<Image catMode={catMode} />
+				<Facts catMode={catMode} />
 			</main>
 			<footer>
-				<Credits />
+				<Credits catMode={catMode} />
 			</footer>
 		</div>
   )

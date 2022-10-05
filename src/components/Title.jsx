@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDog, faCat } from '@fortawesome/free-solid-svg-icons'
 
-export default function Title() {
+export default function Title({catMode}) {
   return (
 		<h1 id="heading">
 			<FontAwesomeIcon /><FontAwesomeIcon />
