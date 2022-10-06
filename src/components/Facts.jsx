@@ -15,8 +15,7 @@ export default function Facts({catMode}) {
 			temp.push(catMode ? catFacts[index] : dogFacts[index]);
 		}
 		setFacts(temp.map(el => <li><FontAwesomeIcon icon={faPaw} />{el}</li>));
-		console.log(facts)
-	}, [catMode])
+	}, [catMode]);
   return (
 		<p id="facts">
 			<ul>
