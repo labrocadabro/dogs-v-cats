@@ -9,8 +9,79 @@
 	header {
 		@apply flex justify-center mt-6 mb-5;
 	}
+	header #switch {
+		@apply relative inline-block;
+    width: 90px;
+    height: 50px;
+	}
+	#switch input {
+		@apply w-0 h-0 opacity-0;
+	}
+	#slider {
+		@apply absolute cursor-pointer top-0 left-0 right-0 bottom-0 bg-purple flex justify-center content-center items-center;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50px;
+	}
+	#cat #slider {
+		@apply bg-orange;
+	}
+	#slider svg {
+		@apply absolute z-20;
+	}
+	#slider svg[data-icon="dog"] {
+		@apply text-darkBrown;
+    left: 10px;
+	}
+
+	#slider svg[data-icon="cat"]  {
+		@apply text-beige;
+		right: 10px;
+	}
+	#slider:before {
+		@apply absolute text-center bg-beige z-10;
+    content: "";
+    height: 40px;
+    width: 40px;
+    left: 5px;
+    bottom: 5px;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+	}
+	input:checked+#slider:before {
+		@apply bg-darkBrown;
+    -webkit-transform: translateX(41px);
+    -ms-transform: translateX(41px);
+    transform: translateX(41px);
+    content: "";
+	}
 	main {
-		@apply p-6;
+		@apply max-w-5xl my-0 mx-auto;
+	}
+	h1 {
+		@apply text-purple font-dog mb-4 text-center text-5xl;
+	}
+	#cat h1 {
+		@apply text-orange;
+	}
+	h1 svg {
+		@apply text-4xl;
+	}
+	h1 svg:first-of-type {
+    @apply mr-1.5;
+	}
+
+	h1 svg:nth-of-type(2) {
+		@apply mr-5;
+	}
+
+	h1 svg:nth-of-type(3) {
+		@apply ml-5;
+	}
+
+	h1 svg:last-of-type {
+		@apply ml-1.5;
 	}
 	footer {
 		@apply flex gap-3 justify-center;
