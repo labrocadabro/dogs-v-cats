@@ -21,8 +21,10 @@ export default function App() {
 			</header>
 			<main>
 				<Title catMode={catMode} />
-				<Image catMode={catMode} />
-				<Facts catMode={catMode} />
+				<div id="content">
+					<Image catMode={catMode} />
+					<Facts catMode={catMode} />
+				</div>		
 			</main>
 			<footer>
 				<Credits catMode={catMode} />

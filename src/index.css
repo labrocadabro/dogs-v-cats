@@ -6,6 +6,15 @@
 	body {
 		@apply text-2xl;
 	}
+	a {
+		@apply underline text-orange;
+	}
+	#dog {
+		@apply bg-beige text-darkBrown;
+	}
+	#cat {
+		@apply bg-darkBrown text-beige;
+	}
 	header {
 		@apply flex justify-center mt-6 mb-5;
 	}
@@ -60,7 +69,7 @@
 		@apply max-w-5xl my-0 mx-auto;
 	}
 	h1 {
-		@apply text-purple font-dog mb-4 text-center text-5xl;
+		@apply text-purple font-dog mb-6 text-center text-5xl;
 	}
 	#cat h1 {
 		@apply text-orange;
@@ -83,22 +92,31 @@
 	h1 svg:last-of-type {
 		@apply ml-1.5;
 	}
+	#content {
+		@apply py-0 px-5 md:flex md:mb-5;
+	}
 	#photo {
-		@apply bg-cover bg-center border-4 border-green rounded-lg  aspect-[3/2] w-6/12;
+		@apply bg-cover bg-center border-4 border-green rounded-lg  aspect-[3/2] md:flex-1;
 	}
 	#cat #photo {
 		@apply border-catGreen;
 	}
+	#facts {
+		@apply my-5 mx-0 md:flex-1 md:m-0;
+	}
+	#facts ul {
+		@apply ml-14 mt-1.5 p-0;
+	}
+	#facts li {
+		@apply relative mb-4;
+	}
+	#facts li svg {
+		@apply absolute -ml-9 text-green;
+	}
+	#cat #facts li svg {
+		@apply text-catGreen;
+	}
 	footer {
-		@apply flex gap-3 justify-center;
-	}
-	#dog {
-		@apply bg-beige text-darkBrown;
-	}
-	#cat {
-		@apply bg-darkBrown text-beige;
-	}
-	a {
-		@apply underline text-orange;
+		@apply flex gap-3 justify-center mb-6;
 	}
 }
