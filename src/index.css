@@ -83,6 +83,12 @@
 	h1 svg:last-of-type {
 		@apply ml-1.5;
 	}
+	#photo {
+		@apply bg-cover bg-center border-4 border-green rounded-lg  aspect-[3/2] w-6/12;
+	}
+	#cat #photo {
+		@apply border-catGreen;
+	}
 	footer {
 		@apply flex gap-3 justify-center;
 	}
